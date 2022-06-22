@@ -1,0 +1,8 @@
+- hosts: all
+  collections:
+   - azure.azcollection
+  tasks:
+  - name: Create a resource group
+    azure_rm_resourcegroup:
+      name: workshop
+      location: westus
