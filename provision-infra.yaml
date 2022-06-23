@@ -3,10 +3,10 @@
    - azure.azcollection
   tasks:
   - name: Create security group that allows SSH
-  azure.azcollection.azure_rm_securitygroup:
-    resource_group: 1-ece8e07c-playground-sandbox
-    name: secgroup001
-    rules:
+    azure_rm_securitygroup:
+      resource_group: 1-ece8e07c-playground-sandbox
+      name: secgroup001
+      rules:
       - name: SSH
         protocol: Tcp
         destination_port_range: 22
